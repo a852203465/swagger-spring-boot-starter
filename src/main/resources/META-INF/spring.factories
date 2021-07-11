@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.darkjrong.swagger.SwaggerWebMvcAutoConfiguration, \
+  cn.darkjrong.swagger.SwaggerWebMvcConfiguration,\
+  cn.darkjrong.swagger.SwaggerWebFluxConfiguration,\
+  cn.darkjrong.swagger.SwaggerWebFluxAutoConfiguration
