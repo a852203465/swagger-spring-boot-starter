@@ -31,12 +31,6 @@
             <artifactId>springfox-boot-starter</artifactId>
             <version>3.0.0</version>
         </dependency>
-        <!--  webflux环境新UI，可不引入-->
-        <dependency>
-            <groupId>com.github.xiaoymin</groupId>
-            <artifactId>knife4j-spring-ui</artifactId>
-            <version>3.0.3</version>
-        </dependency>
 
 ```
 
@@ -59,8 +53,7 @@ swagger:
 ```
 
 3. 访问swagger
- - webmvc: http://ip:port/doc.html
- - webflux: 已引入新UI：http://ip:port/doc.html，未引入：http://ip:port/swagger-ui/index.html
+ - http://ip:port/doc.html
 
  
 
