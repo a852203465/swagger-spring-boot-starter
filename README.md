@@ -73,10 +73,6 @@ swagger:
         name: 贾荣
         email: Rong.Jia@xdcplus.com
         url: https://www.xdcplus.com
-        test1:
-          groupName: 测试1
-          base-packages: com.example.swaggerdemo.controller1
-          path-mapping: /test1
       basePackageRegex: equals
     test2:
       groupName: 测试2  # 分组名
@@ -94,10 +90,6 @@ swagger:
         name: 贾荣
         email: Rong.Jia@xdcplus.com
         url: https://www.xdcplus.com
-        test1:
-          groupName: 测试1
-          base-packages: com.example.swaggerdemo.controller1
-          path-mapping: /test1
       basePackageRegex: equals
 
 
