@@ -65,7 +65,7 @@ public class DocketInfoConfiguration implements BeanFactoryAware {
                     .apiInfo(apiInfo(swaggerProperties))
                     .pathMapping(swaggerProperties.getPathMapping())
                     .ignoredParameterTypes(getIgnoredParameterTypes(swaggerProperties.getIgnoredParameterTypes())).select()
-                    .apis(SwaggerUtil.basePackages(swaggerProperties.getBasePackageRegex(), swaggerProperties.getBasePackages()));
+                    .apis(SwaggerUtil.basePackages(swaggerProperties.getBasePackages()));
 
 
             getBasePath().forEach(p -> apis.paths(PathSelectors.ant(p)));
@@ -100,7 +100,7 @@ public class DocketInfoConfiguration implements BeanFactoryAware {
                         .groupName(StrUtil.isBlank(docketInfo.getGroupName()) ? entry.getKey() : docketInfo.getGroupName())
                         .pathMapping(StrUtil.isBlank(docketInfo.getPathMapping()) ? swaggerProperties.getPathMapping() : docketInfo.getPathMapping())
                         .ignoredParameterTypes(getIgnoredParameterTypes(CollectionUtil.isEmpty(docketInfo.getIgnoredParameterTypes()) ? swaggerProperties.getIgnoredParameterTypes() : docketInfo.getIgnoredParameterTypes())).select()
-                        .apis(SwaggerUtil.basePackages(docketInfo.getBasePackageRegex(), docketInfo.getBasePackages()));
+                        .apis(SwaggerUtil.basePackages(docketInfo.getBasePackages()));
 
 
                 getBasePath().forEach(p -> apis.paths(PathSelectors.ant(p)));

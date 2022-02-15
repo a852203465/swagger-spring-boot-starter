@@ -32,11 +32,6 @@ public class SwaggerProperties {
 	private List<String> basePackages = new ArrayList<>();
 
 	/**
-	 * swagger解析的包路径的过滤规则
-	 */
-	private ScanMatchingRuleEnum basePackageRegex = ScanMatchingRuleEnum.startsWith;
-
-	/**
 	 * swagger会解析的url规则
 	 **/
 	private List<String> basePath = new ArrayList<>();
