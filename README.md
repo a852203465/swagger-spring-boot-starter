@@ -49,7 +49,6 @@ swagger:
     name: aa
     email: A@xdcplus.com
     url: https://www.a.com
-  base-package-regex: equals
 ```
 
 ### 分组配置
@@ -73,7 +72,6 @@ swagger:
         name: 贾荣
         email: Rong.Jia@xdcplus.com
         url: https://www.xdcplus.com
-      basePackageRegex: equals
     test2:
       groupName: 测试2  # 分组名
       base-packages: com.example.swaggerdemo.controller2
@@ -90,7 +88,6 @@ swagger:
         name: 贾荣
         email: Rong.Jia@xdcplus.com
         url: https://www.xdcplus.com
-      basePackageRegex: equals
 
 
 ```
