@@ -1,9 +1,10 @@
 package cn.darkjrong.spring.boot.autoconfigure;
 
 import cn.darkjrong.swagger.common.configuration.DocketPostProcessor;
+import cn.darkjrong.swagger.common.configuration.SpringfoxRequestMappingHandlerMapping;
+import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import springfox.bean.validators.configuration.BeanValidatorPluginsConfiguration;
 import springfox.documentation.oas.configuration.OpenApiDocumentationConfiguration;
@@ -14,7 +15,7 @@ import springfox.documentation.oas.configuration.OpenApiDocumentationConfigurati
  * @author Rong.Jia
  * @date 2021/12/20
  */
-@Configuration
+@AutoConfiguration
 @ComponentScan({
         "com.github.xiaoymin.knife4j.spring",
         "cn.darkjrong.swagger",
@@ -28,6 +29,10 @@ public class SwaggerAutoConfiguration {
         return new DocketPostProcessor();
     }
 
+    @Bean
+    public SpringfoxRequestMappingHandlerMapping springfoxRequestMappingHandlerMapping() {
+        return new SpringfoxRequestMappingHandlerMapping();
+    }
 
 
 

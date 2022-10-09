@@ -19,7 +19,7 @@ import org.springframework.web.reactive.config.WebFluxConfigurer;
 @AllArgsConstructor
 @ConditionalOnClass({WebFluxConfigurer.class})
 @EnableConfigurationProperties(SwaggerProperties.class)
-public class SwaggerWebFluxAutoConfiguration {
+public class SwaggerWebFluxConfiguration {
 
     private final SwaggerProperties swaggerProperties;
 
