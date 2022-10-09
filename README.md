@@ -2,6 +2,7 @@
 
 ## 版本基础
     - SpringFox Swagger：3.0.0
+    - Spring Boot: 2.5.7
 
 ## 使用说明
 - 在`pom.xml`中引入依赖：
