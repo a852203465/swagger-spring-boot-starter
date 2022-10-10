@@ -1,4 +1,4 @@
-package cn.darkjrong.swagger.common.configuration;
+package cn.darkjrong.swagger.webmvc;
 
 import org.springframework.web.servlet.mvc.method.RequestMappingInfo;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;

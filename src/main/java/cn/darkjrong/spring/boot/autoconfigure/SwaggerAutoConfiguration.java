@@ -1,7 +1,6 @@
 package cn.darkjrong.spring.boot.autoconfigure;
 
 import cn.darkjrong.swagger.common.configuration.DocketPostProcessor;
-import cn.darkjrong.swagger.common.configuration.SpringfoxRequestMappingHandlerMapping;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -29,10 +28,6 @@ public class SwaggerAutoConfiguration {
         return new DocketPostProcessor();
     }
 
-    @Bean
-    public SpringfoxRequestMappingHandlerMapping springfoxRequestMappingHandlerMapping() {
-        return new SpringfoxRequestMappingHandlerMapping();
-    }
 
 
 
